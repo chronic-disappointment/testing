@@ -18,4 +18,4 @@ http
     // res.write("goodbye world");
     res.end("goodbye world");
   })
-  .listen(process.env.PORT || 5000);
+  .listen(process.env.PORT);
