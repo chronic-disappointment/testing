@@ -1,6 +1,6 @@
 // const express = require("express");
 // const app = express();
-const port = process.env.PORT;
+// const port = process.env.PORT;
 
 // app.get("/", (req, res) => {
 //   res.send("good bye world");
@@ -15,7 +15,7 @@ var http = require("http");
 http
   .createServer((req, res) => {
     res.writeHead(200, { "Content-Type": "text/plain" });
-    res.write("goodbye world");
-    res.end();
+    // res.write("goodbye world");
+    res.end("goodbye world");
   })
-  .listen(port);
+  .listen(process.env.PORT || 5000);
